@@ -9,19 +9,19 @@ title: ShareIftar Partners
   <h2 class="mt-4 mb-4">Charity partners</h2>
 
   <% [0, 1].each do | charity | %>
-    <%= partial "components/_charity-card" %>
+    <%= partial "components/_charity-card", locals: { charity: charity } %>
   <% end %>
 
   <h2 class="mt-4 mb-4">Collection point / food partners</h2>
 
-  <% [0, 1].each do | charity | %>
-    <%= partial "components/_collection-point-card" %>
+  <% [0, 1].each do | collection_point | %>
+    <%= partial "components/_collection-point-card", locals: { collection_point: collection_point } %>
   <% end %>
 
   <h2 class="mt-4 mb-4">Special thanks</h2>
 
-  <% [0, 1].each do | charity | %>
-    <%= partial "components/_individual-card" %>
+  <% [0, 1].each do | individual | %>
+    <%= partial "components/_individual-card", locals: { individual: individual } %>
   <% end %>
 
 </div>
