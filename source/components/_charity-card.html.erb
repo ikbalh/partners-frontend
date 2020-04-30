@@ -1,17 +1,21 @@
+<%
+  charity.image ||= image_path("default-charity-image.jpeg")
+%>
+
 <div class="row mb-2">
-  <div class="col-md-12">
+  <div class="col-12">
     <div class="card">
       <div class="row">
-        <div class="col-md-3">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" class="card-img" alt="">
+        <div class="col-lg-3">
+          <img height="100%" src="<%= charity.image %>" class="card-img" alt="charity image">
         </div>
-        <div class="col-md-9">
+        <div class="col-lg-9">
           <div class="card-body">
-            <h5 class="card-title">Charity name</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Charity subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Charity link</a>
-            <a href="#" class="card-link">Charity donation link</a>
+            <h5 class="card-title"><%= charity.name %></h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= charity.subtitle %></h6>
+            <p class="card-text"><%= charity.description %></p>
+            <a href="<%= charity.website %>" class="card-link">Website</a>
+            <a href="<%= charity.donation_link %>" class="card-link">Donate</a>
           </div>
         </div>
       </div>

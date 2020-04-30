@@ -1,0 +1,19 @@
+- name: Ikbal Hussain
+  role: Designer
+  image: 
+  description: |
+    Blah blah blah
+- name: Dilwoar Hussain
+  role: Software Engineer
+  image: 
+  website: "https://www.dilwoarhussain.com"
+  linkedin: "https://www.linkedin.com/in/dilwoar"
+  description: |
+    Blah blah blah
+- name: Blah blah
+  role: Software Engineer
+  image: 
+  website: "https://www.blah.com"
+  linkedin: "https://www.linkedin.com/in/blah"
+  description: |
+    Blah blah blah

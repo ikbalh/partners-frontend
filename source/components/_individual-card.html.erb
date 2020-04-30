@@ -1,17 +1,21 @@
+<%
+  individual.image ||= image_path("default-individual-image.jpeg")
+%>
+
 <div class="row mb-2">
   <div class="col-md-12">
     <div class="card">
       <div class="row">
         <div class="col-md-3">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1581368163672-d717bcb4c6af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" class="card-img" alt="">
+          <img height="100%" src="<%= individual.image %>" class="card-img" alt="Individual image">
         </div>
         <div class="col-md-9">
           <div class="card-body">
-            <h5 class="card-title">Individual name</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Individual role</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Individual website link</a>
-            <a href="#" class="card-link">Individual linkedin link</a>
+            <h5 class="card-title"><%= individual.name %></h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= individual.role %></h6>
+            <p class="card-text"><%= individual.description %></p>
+            <a href="<%= individual.website %>" class="card-link">Personal website</a>
+            <a href="<%= individual.linkedin %>" class="card-link">Linkedin</a>
           </div>
         </div>
       </div>
