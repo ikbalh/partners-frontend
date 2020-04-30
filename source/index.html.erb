@@ -6,7 +6,7 @@ title: ShareIftar Partners
 
 <div class="container mb-5">
 
-  <h2 class="mb-4">Charity partners</h2>
+  <h2 class="mt-4 mb-4">Charity partners</h2>
 
   <% [0, 1].each do | charity | %>
     <%= partial "components/_charity-card" %>
@@ -16,6 +16,12 @@ title: ShareIftar Partners
 
   <% [0, 1].each do | charity | %>
     <%= partial "components/_collection-point-card" %>
+  <% end %>
+
+  <h2 class="mt-4 mb-4">Special thanks</h2>
+
+  <% [0, 1].each do | charity | %>
+    <%= partial "components/_individual-card" %>
   <% end %>
 
 </div>
