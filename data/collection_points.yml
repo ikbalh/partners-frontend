@@ -1,7 +1,8 @@
-- name: Collection point name
-  subtitle: Non profit organisation
-  website: "https://blahblah.com"
-  donation_link: "https://blahblah.com"
-  image: 
+- name: Co-Operate 19 (Yaseen Youth Tours)
+  subtitle: Charity
+  website: https://www.muntadaaid.org/
+  donation_link: https://www.muntadaaid.org/donate/
+  image: https://scontent.flhr3-1.fna.fbcdn.net/v/t1.0-9/15202599_617296898453335_38544063131061202_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=bb-XO5nfcjMAX8RvoeX&_nc_ht=scontent.flhr3-1.fna&oh=2b4ff5ab20cecede8b8bc74d56eab807&oe=5ED1C39F
   description: |
-    blah blah
+    A new non-profit organisation that aims to inspire and empower Muslim youth through Umrah development programmes.
+
